@@ -1,4 +1,5 @@
 DemoStarly::Application.routes.draw do
+  match "demo" => 'demo#index'
   get "demo/index"
 
   get "welcome/index"
