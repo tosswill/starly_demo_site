@@ -5,10 +5,23 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+   <script src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+  <script id="starly_settings">
+  
+  
+    var starly_settings = {
+      app_id: 'paTNR4dAcCPn3t6i-QBjTg',
+    };
+    var BASE_URL = 'http://api.star.ly/api/v1/apps/';
+  </script>
+  
 </head>
 <body>
 
 <%= yield %>
+
+
+
 
 </body>
 </html>

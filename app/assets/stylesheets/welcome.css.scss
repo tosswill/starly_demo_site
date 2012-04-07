@@ -1,0 +1,36 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+ #starly_score{
+      vertical-align: top;
+      color: #646464;
+      display:inline;
+      font-size:19px;
+      font-family: 'helvetica';
+      font-weight:bold;
+      margin-left:8px;
+    }
+    #starly_score_widget{
+      width:110px;
+
+    }
+    .test{      
+      padding: 12px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px inset, white 0px -1px 1px inset;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px inset, white 0px -1px 1px inset;
+      -o-box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px inset, white 0px -1px 1px inset;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px inset, white 0px -1px 1px inset;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -o-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -khtml-border-radius: 5px;
+      border-radius: 5px;
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.05))), rgba(255, 255, 255, 0.4);
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), rgba(255, 255, 255, 0.4);
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), rgba(255, 255, 255, 0.4);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), rgba(255, 255, 255, 0.4);
+      background: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), rgba(255, 255, 255, 0.4);
+}
+    

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DemoStarly</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script id="starly_settings">
+  
+    var starly_settings = {
+      app_id: 'paTNR4dAcCPn3t6i-QBjTg',
+      customer_id: 'john@test.com'
+    };
+    
+    var head = document.getElementsByTagName('head')[0];
+    
+    function bootstrap_starly_client(){
+      var ss = document.createElement('link');
+		  ss.href = 'https://s3.amazonaws.com/starly_live/starly_client.css';
+		  ss.rel = "stylesheet";
+		  ss.media = "screen"
+		  head.appendChild(ss);
+      
+      var script = document.createElement('script');
+		  script.src = 'https://s3.amazonaws.com/starly_live/starly_client.js';
+		  head.appendChild(script);
+      
+    };
+  
+    if (typeof jQuery == 'undefined'){
+      
+      var script = document.createElement('script');
+		  script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
+		  head.appendChild(script);
+		  
+		  bootstrap_starly_client();  
+    }
+    else{
+      bootstrap_starly_client();
+    };
+</script>
+  
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
